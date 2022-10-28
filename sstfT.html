@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sstfT.css">
+
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li> <a href ="sstf.html"> Implement </a></li>
+            <li> <a href ="index.html"> Home </a></li>
+        </ul>
+    </nav>
+    <div class="theory-text">
+        
+        <h2><strong>
+    SSTF (Shortest-Seek-Time-First) Disk Scheduling Algorithm
+</strong></h2>
+            <p><t>SSTF is one more sort of planning calculation. In this sort of plate booking, the work which has less look for time will be executed first. In this way, in SSTF (most limited look for time first) booking, we need to compute the look for time first. furthermore, in the wake of working out the look for time, each solicitation will be served based on look for time. The solicitation which is near the plate arm will be first executed. There are a few downsides in FCFS. To beat the restrictions that emerge in the FCFS. SSTF planning is carried out.</t></p>
+        <h4>Algorithm:</h4>
+        <ul type="square">
+            <li>Allow Solicitation to exhibit addresses a cluster putting away lists of tracks that have been mentioned. 'head' is the place of plate head</li>
+            <li>Find the positive distance of all tracks in the solicitation cluster from head.</li>
+            <li>Find a track from mentioned exhibit which has not been gotten to/overhauled at this point and has least separation from head.</li>
+            <li>Increase the complete look for count with this distance.</li>
+            <li>At present adjusted track position currently turns into the new head position.</li>
+            <li>Go to stage 2 until all tracks in demand cluster have not been adjusted.</li>
+        </ul>
+        <h4>Advantages of SSTF Disk scheduling Algorithm:</h4>
+        <p>The advantages of SSTF disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>In SSTF circle booking, the typical reaction time is diminished.</li>
+            <li>Increased throughput.</li>
+        </ul>
+        <h4>Disadvantages of SSTF Disk Scheduling Algorithm:</h4>
+        <p>The disadvantages of SSTF disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>In SSTF, there might be an opportunity of starvation.</li>
+            <li>SSTF is certainly not an ideal calculation.</li>
+            <li>There are chances of above in SSTF circle planning on the grounds that, in this calculation, we need to ascertain the look for time in cutting edge.</li>
+            <li>The speed of this calculation can be diminished on the grounds that heading could be exchanged habitually.</li>
+            <br>
+       
+        
+            
+        </ul>
+    </div>
+
+</body>
+</html>

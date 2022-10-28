@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SCAN_T.css">
+
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li> <a href ="SCAN.html"> Implement </a></li>
+            <li> <a href ="index.html"> Home </a></li>
+        </ul>
+    </nav>
+    <div class="theory-text">
+        
+        <h2><strong>
+     SCAN(Elevator Scan) Disk Scheduling Algorithm
+</strong></h2>
+            <p><t>The SCAN disk scheduling algorithm is another type of disk scheduling algorithm. In this algorithm, we move the disk arm into a specific direction (direction can be moved towards large value or the smallest value). Each request is addressed that comes in its path, and when it comes into the end of the disk, then the disk arm will move reverse, and all the requests are addressed that are arriving in its path. Scan disk scheduling algorithm is also called an elevator algorithm because its working is like an elevator.</t></p>
+        <h4>Algorithm:</h4>
+        <ul type="square">
+            <li>Allow Solicitation to exhibit addresses a cluster putting away records of tracks that have been mentioned in climbing request of their season of appearance. 'head' is the place of disk head.</li>
+            <li>Let bearing addresses whether the head is moving towards left or right.</li>
+            <li>Toward the path in which head is moving assistance all tracks individually.</li>
+            <li>Work out the outright distance of the track from the head.</li>
+            <li>At present overhauled track position currently turns into the new head position.</li>
+            <li>Go to stage 3 until we reach at one of the finishes of the disk.</li>
+            <li>Assuming we reach toward the finish of the plate turn around the heading and head to stage 2 until all tracks in demand exhibit have not been overhauled.</li>
+        </ul>
+        <h4>Advantages of SCAN Disk scheduling Algorithm:</h4>
+        <p>The advantages of SCAN disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>In SCAN disk scheduling, there is a low fluctuation of reaction time.</li>
+            <li>In this calculation, throughput is high.</li>
+            <li>Response time is average.</li>
+            <li>In SCAN disk scheduling, there is no starvation.</li>
+        </ul>
+        <h4>Disadvantages of SCAN Disk Scheduling Algorithm:</h4>
+        <p>The disadvantages of SCAN disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li> SCAN disk scheduling algorithm sets aside some margin for the chambers, just visited by the head.</li>
+            <li>In C-SCAN disk scheduling, we need to move the disk head to the furthest limit of the disk in any event, when we have no solicitation to support.</li>
+            <li>It is more perplexing calculation to carry out.</li>
+            <br>    
+        </ul>
+    </div>
+
+</body>
+</html>

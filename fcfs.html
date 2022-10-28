@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="algorithm_css.css">
+    <title>FCFS Algorithm</title>
+    <script src="fcfsAI.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
+</head>
+<body> 
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li> <a href ="fcfsT.html"> Theory </a></li>
+            <li> <a href ="index.html"> Home </a></li>
+        </ul>
+    </nav>
+    <div class="calc_container">
+        <div class="header">
+            <h2><strong>First Come First Serve(FCFS) Algorithm Implementation</strong></h2>
+        </div>
+        <div class="calculation">
+                <label for="values">Request Queue:</label>
+                <input type="text" name="values" id="Queue_vals" placeholder="Separate them With Space">
+                <br>
+                <br>
+                <button onclick="GenerateQ();" type="submit">Generate Queue </button>
+            <br>
+            <br>
+            <div class="head_posi">
+                <label for="value">Current Read/Write Head Position</label>
+                <input type="text" name="value" id="pos_head" placeholder="Head Position">
+                <br>
+            </div>
+            <br>
+            <div class="implem">
+                <button onclick="fcfsImplement();" id="implementbutton" type="button"> Implement </button>
+            </div>
+        </div>
+        <div class="graph">
+            <canvas id="AlgoGraph" style="width:100%;max-width:700px"></canvas>
+        </div>
+        <div id="Output"></div>
+ 
+    </div>
+    </body>
+</html>

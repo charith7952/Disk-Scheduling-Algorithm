@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C-SCAN_T.css">
+  
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li> <a href ="C-SCAN.html"> Implement </a></li>
+            <li> <a href ="index.html"> Home </a></li>
+        </ul>
+    </nav>
+    <div class="theory-text">
+        
+        <h2><strong>
+     C-SCAN(Circular Scan) Disk Scheduling Algorithm
+</strong></h2>
+            <p><t>C-SCAN stands for Circular-SCAN. C-SCAN is an enhanced version of SCAN disk scheduling. In the C-SCAN disk scheduling algorithm, the disk head starts to move at one end of the disk and moves towards the other end and service the requests that come in its path and reach another end. After doing this, the direction of the head is reversed. The head reaches the first end without satisfying any request and then it goes back and services the requests which are remaining.</t></p>
+        <h4>Algorithm:</h4>
+        <ul type="square">
+            <li>Let Request array represents an array storing indexes of tracks that have been requested. ‘head’ is the position of disk head.</li>
+            <li>The head services only in the right direction from 0 to size of the disk.</li>
+            <li>While moving in the left direction do not service any of the tracks.</li>
+            <li>When we reach at the beginning(left end) reverse the direction.</li>
+            <li>While moving in right direction it services all tracks one by one.</li>
+            <li>While moving in right direction calculate the absolute distance of the track from the head.</li>
+            <li>Increment the total seek count with this distance.</li>
+            <li>Currently serviced track position now becomes the new head position.</li>
+            <li>Go to step 6 until we reach at right end of the disk.</li>
+            <li>If we reach at the right end of the disk reverse the direction and go to step 3 until all tracks in request array have not been serviced.</li>
+        </ul>
+        <h4>Advantages of C-SCAN Disk scheduling Algorithm:</h4>
+        <p>The advantages of C-SCAN disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>C-SCAN offers better uniform waiting time.</li>
+            <li>It offers a better response time.</li>
+        </ul>
+        <h4>Disadvantages of C-SCAN Disk Scheduling Algorithm:</h4>
+        <p>The disadvantages of C-SCAN disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>In C-SCAN disk scheduling, there are more seek movements as compared to SCAN disk scheduling.</li>
+            <li>In C-SCAN disk scheduling, we have to move the disk head to the end of the disk even when we don’t have any request to service.</li>
+            <br>    
+        </ul>
+    </div>
+
+</body>
+</html>
